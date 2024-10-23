@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Je n'ai vraiment plus d'inspi à la force...">
+	<title>Exo HTML 4</title>
+	<!-- BoxIcons Lien -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Lien Css perso -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<!-- Header Début -->
+	<header class="header">
+		<!-- Logo -->
+		<a href="index.html" class="logo">
+			<img src="assets/img/logo.webp" alt="Logo de notre entreprise.">
+		</a>
+
+		<!-- Titre -->
+		<h1>Notre Superbe Entreprise 😊</h1>
+
+		<!-- Nav Début -->
+		<nav class="navbar">
+			<ul>
+				<li><a href="#accueil" title="Vous ammène a notre section 'accueil'">Accueil</a></li>
+				<li><a href="#aPropos" title="Vous ammène a notre section 'A Propos'">A Propos</a></li>
+				<li><a href="#contact" title="Vous ammène a notre section 'conctact'">Contact</a></li>
+				<li><a href="#faq" title="Vous ammène a notre section 'FAQ'">FAQ</a></li>
+			</ul>
+		</nav>
+		<!-- Nav Fin -->
+	</header>
+	<!-- Header Fin -->
+
+	<!-- Main Début -->
+	<main>
+		<!-- Section accueil Début -->
+		<section id="accueil">
+			<h2>Notre Equipe.</h2>
+			<!-- Tableau Début -->
+			<table class="employeesTable">
+				<caption>Tableau présentant nos membres</caption>
+				<colgroup>
+					<col span="1" style="width: 180px;">
+					<col span="2" style="width: 100px;">
+				</colgroup>
+				<!-- En-tête du tableau -->
+				<thead>
+					<tr>
+						<!-- En-tête du tableau -->
+						<th scope="col">Nom du membre</th>
+						<th scope="col">Poste occupé</th>
+						<th scope="col">Date d'embauche</th>
+					</tr>
+				</thead>
+				<!-- Corps du tableau -->
+				<tbody>
+					<tr>
+						<th scope="row">Patrick</th>
+						<td>Chômeur</td>
+						<td>Aucune lol</td>
+					</tr>
+					<tr>
+						<th scope="row">Manu</th>
+						<td>Gérant Marketing</td>
+						<td>12 Janvier 2022</td>
+					</tr>
+					<tr>
+						<th scope="row">Un autre random</th>
+						<td>Chef d'équipe</td>
+						<td>11 Septembre 2021</td>
+					</tr>
+					<tr>
+						<th scope="row">Je sais pas</th>
+						<td>Agent d'entretien</td>
+						<td>30 Octobre 2024</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Tableau Fin -->
+		</section>
+		<!-- Section accueil Fin -->
+
+		<!-- Section A Propos Début -->
+		<section id="aPropos">
+			<h2>A Propos de l'entreprise</h2>
+			<div class="imgContainer">
+				<figure>
+					<img src="assets/img/bureaux.jpg" alt="Une image de notre entreprise">
+					<img src="assets/img/bureauxCoté.jpg" alt="Une image de notre entreprise vu sur le côté">
+					<img src="assets/img/workspace.jpg" alt="Une image de nos employées travaillant ensemble">
+					<figcaption>Notre entreprise vu de l'éxtérieur et nos réunions hebdomadaires.</figcaption>
+				</figure>
+			</div>
+
+			<img src="assets/img/map.webp" alt="Une image de carte venant de Google Maps" usemap="#mapImage">
+			<map name="mapImage">
+				<area shape="rect" coords="156,194,284,233" href="https://www.tourmontparnasse56.com/fr/" target="_blank" alt="Imagine que çe te renvoi sur la page d'une entreprise.">
+				<area shape="rect" coords="436,45,592,117" href="https://fr.wikipedia.org/wiki/Place_de_la_Bastille" target="_blank" alt="Encore une fois... Imagination...">
+			</map>
+		</section>
+		<!-- Section A Propos Fin -->
+
+		<!-- Section Contact Début -->
+		<section id="contact">
+			<h2>Nous Contacter</h2>
+			<form action="submit.php" method="post" enctype="multipart/form-data">
+				<label for="name">Votre Nom :</label>
+				<input type="text" name="name" id="name" required autofocus="autofocus" placeholder="Votre nom ici...">
+					
+				<label for="mail">Votre Mail :</label>
+				<input type="email" name="mail" id="mail" required placeholder="Votre mail ici...">
+
+				<label for="object">L'objet du message :</label>
+				<input type="text" name="object" id="object" required placeholder="L'objet de votre message ici...">
+
+				<label for="message">Votre message :</label>
+				<textarea name="message" id="message" cols="10" rows="3" required placeholder="Votre message ici..." maxlength="1000"></textarea>
+
+				<button type="submit" name="submitForm">Soumettre le formulaire</button>
+			</form>
+		</section>
+		<!-- Section Contact Fin -->
+
+		<!-- Section FAQ Début -->
+		<section class="faq">
+			<h2>Notre FAQ</h2>
+			<details>
+				<summary>Voir notre FAQ</summary>
+				<div class="container">
+					<div class="questionContainer">
+						<p class=question>Comment nous contacter ?</p>
+						<p class="answer">Remplisser notre formulaire lol</p>
+					</div>
+				</div>
+			</details>
+		</section>
+		<!-- Section FAQ Fin -->
+	</main>
+	<!-- Main Fin -->
+
+	<!-- Footer Début -->
+	<footer>
+		<!-- Mentions Légales -->
+		<a href="https://www.legalplace.fr/guides/mentions-legales/" title="Affiche les mentions légales du site." target="_blank">Mentions légales</a>
+
+		<!-- Réseaux sociaux -->
+		<div class="socialsLinks">
+			<a href="https://fr-fr.facebook.com/login.php/" target="_blank" title="Vous redirige sur Facebook"><i class='bx bxl-facebook'></i></a>
+			<a href="https://www.instagram.com/accounts/login/?next=%2Fbtwbae%2Ffeed%2F&source=profile_feed_tab&locale=fr_FR" target="_blank" title="Vous redirige sur Instagram"><i class='bx bxl-instagram'></i></a>
+			<a href="https://www.linkedin.com/login/fr" target="_blank" title="Vous redirige sur Linkedin"><i class='bx bxl-linkedin-square'></i></a>
+		</div>
+
+		<!-- Coordonnées -->
+		<address>
+			<p>69 Avenue Je-sais-pas-quoi-mettre</p>
+			<p><a href="tel:0777777777" title="Notre numéro de standard">07 77 77 77 77</a></p>
+			<p><a href="mailto:jesaispascousin@gmail.com" title="Notre adresse mail pro">jesaispascousin@gmail.com</a></p>
+		</address>
+	</footer>
+	<!-- Footer Fin -->
+</body>
+</html>
