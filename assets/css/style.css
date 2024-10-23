@@ -135,7 +135,7 @@ section h2 {
 	text-align: center;
 }
 
-table {
+.employeesTable {
 	width: 100%;
 	border-collapse: collapse;
 	margin-bottom: 20px;
